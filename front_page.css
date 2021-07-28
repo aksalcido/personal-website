@@ -1,0 +1,89 @@
+/* Ensure all boxes stay their designated width regardless of padding */
+* {
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* Remove Top of Page Space for Navbar */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-family: Verdana, sans-serif; /* Temp */
+}
+
+/* ----- Navbar ----- */
+nav {
+    position: fixed;
+    top: 0px;   
+    left: 0px;
+    height: 75px;
+    width: 100%;
+    background-color: transparent;
+    overflow: hidden;
+
+        
+    transition: 0.4s;
+}
+
+#navbar-list {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.navbar-item {
+    float: left;
+    width: 220px;
+    max-width: 220px;
+    height: 75px;
+    font-size: 24px;
+    padding: 16px 12px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.navbar-item a {
+    color: white;
+    text-decoration: none;
+}
+
+#nav-contact {
+    float: right;
+}
+
+/* ----- Front Image ----- */
+.front-image {
+    height: calc(100vh);
+    padding-top: 75px;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#welcome-armando {
+    height: 75vh;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-align-items: center;
+            align-items: center;
+
+    -webkit-justify-content: center;
+            justify-content: center;
+    
+    color: white;
+}
+
+#front-name {
+    font-size: 48px;
+}
+
+#front-description {
+
+}
+
+#navigate-down-img {
+    position: absolute;
+    bottom: 10px;
+}
