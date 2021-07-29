@@ -1,0 +1,163 @@
+/* Ensure all boxes stay their designated width regardless of padding */
+* {
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* Remove Top of Page Space for Navbar */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-family: Verdana, sans-serif; /* Temp */
+}
+
+/* ----- Navbar ----- */
+nav {
+    position: fixed;
+    top: 0px;   
+    left: 0px;
+    height: 75px;
+    width: 100%;
+    background-color: transparent;
+    overflow: hidden;
+
+        
+    transition: 0.4s;
+}
+
+#navbar-list {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.navbar-item {
+    float: left;
+    width: 220px;
+    max-width: 220px;
+    height: 75px;
+    font-size: 24px;
+    padding: 16px 12px;
+    text-align: center;
+    list-style-type: none;
+
+    transition: 0.2s;
+}
+
+.navbar-item:hover {
+    background: rgb(251, 251, 251, 0.2);
+}
+
+.navbar-item:active {
+    transform: translateY(4px);
+}
+
+
+
+.navbar-item a {
+    color: white;
+    text-decoration: none;
+}
+
+#nav-contact {
+    float: right;
+}
+
+/* ----- Front Image ----- */
+.front-image {
+    height: calc(100vh);
+    padding-top: 75px;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#welcome-armando {
+    height: 75vh;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-align-items: center;
+            align-items: center;
+
+    -webkit-justify-content: center;
+            justify-content: center;
+    
+    color: white;
+}
+
+#front-name {
+    font-size: 48px;
+}
+
+#front-description {
+
+}
+
+#navigate-down-img {
+    position: absolute;
+    bottom: 10px;
+}
+
+/* Sections */
+.container {
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.section-header {
+    margin: 0; 
+    font-size:28px; 
+    padding: 10px 0px; 
+    margin-bottom: 20px;
+}
+
+/* About Section */
+#about-section {
+    height: 600px; 
+    background: #1A1A1D;
+}
+
+#about-section-header {
+    color: white; 
+    border-bottom: 1px solid white; 
+}
+
+/* Project Section */
+#project-section {
+    height: 1000px; 
+    background: #F2F2F2;
+}
+
+#project-section-header {
+    text-align: right; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+/* Contact Section */
+#contact-section {
+    height: 200px;
+    background: #4E4E50;
+}
+
+#contact-section-header {
+    color: white; 
+    border-bottom: 1px solid white;
+}
+
+/* Footer */
+.footer {
+    height: 300px; 
+    background: black;
+}
+
+.container a {
+    text-decoration: none   ;
+}
+
+.contact-icon {
+    font-size: 64px;
+    color: rgb(29, 29, 29);
+}

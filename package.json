@@ -1,0 +1,23 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Personal Website for Armando Salcido",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aksalcido/personal-website.git"
+  },
+  "author": "Armando Salcido",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aksalcido/personal-website/issues"
+  },
+  "homepage": "https://github.com/aksalcido/personal-website#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
