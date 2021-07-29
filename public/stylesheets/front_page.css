@@ -22,8 +22,7 @@ nav {
     width: 100%;
     background-color: transparent;
     overflow: hidden;
-
-        
+    z-index: 20;
     transition: 0.4s;
 }
 
@@ -123,9 +122,15 @@ nav {
     border-bottom: 1px solid white; 
 }
 
+#profile-picture {
+    height: 80%; 
+    float: right;
+    border-radius: 25px;
+}
+
 /* Project Section */
 #project-section {
-    height: 1000px; 
+    height: 1500px; 
     background: #F2F2F2;
 }
 
@@ -133,6 +138,42 @@ nav {
     text-align: right; 
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
 }
+
+.shown-demo {
+    transform: scale(1.10);
+    filter: none;
+    z-index: 5;
+}
+
+.blurred-demo {
+    transform: scale(1);
+    filter: blur(4px);
+    z-index: 1;
+}
+
+
+
+#view-projects-btn {
+    display: inline-block;  
+    background-color: #42B5C8;
+    color: #F2F2F2;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    
+}
+
+#view-projects-btn:hover {
+    color: white;
+    background-color: #348B99;
+}
+
+#view-projects-btn:active {
+    transform: translateY(4px);
+    box-shadow: 1px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
 
 /* Contact Section */
 #contact-section {
@@ -144,6 +185,8 @@ nav {
     color: white; 
     border-bottom: 1px solid white;
 }
+
+
 
 /* Footer */
 .footer {
@@ -158,4 +201,9 @@ nav {
 .contact-icon {
     font-size: 64px;
     color: rgb(29, 29, 29);
+    transition: 0.2s ease;
+}
+
+.contact-icon:hover {
+    color: #F2F2F2;
 }
