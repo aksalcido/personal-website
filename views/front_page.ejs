@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Title</title>
-    <link rel="stylesheet" href="front_page.css">
+    <title>Armando Salcido's Website</title>
+    <link rel="stylesheet" href="/stylesheets/front_page.css">
 
     <!-- font-awesome 5.15.2 CDN -->
     <script src="https://kit.fontawesome.com/5d8a1b574b.js" crossorigin="anonymous"></script>
 
-    <script src="front_page.js" defer></script>
+    <script src="scripts/front_page.js" defer></script>
+
+    <% if (scrollBottom) { %>
+        <script src="scripts/contact.js" defer></script>
+    <% } %>
 </head>
 <body>
     <!-- Navbar -->
     <nav>
         <ul id="navbar-list">
-            <li class="navbar-item"><a href="front_page.html">Home</a></li>
-            <li class="navbar-item"><a href="projects.html">Projects</a></li>
-            <li class="navbar-item"><a href="resume.html">Resume</a></li>
+            <li class="navbar-item"><a href="/">Home</a></li>
+            <li class="navbar-item"><a href="/projects">Projects</a></li>
+            <li class="navbar-item"><a href="/resume">Resume</a></li>
             <li class="navbar-item" id="nav-contact"><a>Contact</a></li>
         </ul>
     </nav>
@@ -31,7 +35,7 @@
             </div>
 
             <div id="navigate-down-div" style="text-align: center;"> 
-                <img id="navigate-down-img" src="arrow-down-sign-to-navigate.png">
+                <img id="navigate-down-img" src="/images/arrow-down-sign-to-navigate.png">
             </div>
         </div> <!-- front-image div End-->
     </div>
@@ -49,20 +53,29 @@
         <div class="container">
             <h1 class="section-header" id="project-section-header">Projects</h1>
             
+
+            <img src="/gifs/gameplay.gif" style="min-width: 310px; height:400px; float: left;">
+            <img src="/gifs/homepage.gif" style="min-width: 310px; height:400px; float: left;">
+            <img src="/gifs/solve.gif" style="min-width: 310px; height:400px; float: left;">
+
+            <!--
             <div class="project-showcase" id="project-brush">
-                <img src="homepage.gif" style="min-width: 310px; height:400px; float: left;">
+                <img src="/gifs/homepage.gif" style="min-width: 310px; height:400px; float: left;">
                 <p>Wrap</p>
             </div>
             
 
             <div class="project-showcase" id="project-pacman" style="clear: left;">
-                <img src="gameplay.gif" style="min-width: 310px; height:400px; float: right;">
+                <img src="/gifs/gameplay.gif" style="min-width: 310px; height:400px; float: right;">
                 <p>Wrap</p>
             </div>
 
             <div style="clear: right; text-align: center;">
                 <a href="projects.html">View All Projects</a>
             </div>
+
+             -->
+             
         </div> <!-- Container div end-->
     </section>
 
@@ -71,17 +84,18 @@
         <div class="container">
             <h1 class="section-header" id="contact-section-header">Contact</h1>
 
-            <a href=""><i class="contact-icon fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/armando-salcido-560b15176/"><i class="contact-icon fab fa-linkedin"></i></a>
-            <a href="https://github.com/aksalcido"><i class="contact-icon fab fa-github"></i></a>
-
+            <div id="icon-container" style="text-align: center;">
+                <a href=""><i class="contact-icon fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/armando-salcido-560b15176/"><i class="contact-icon fab fa-linkedin"></i></a>
+                <a href="https://github.com/aksalcido"><i class="contact-icon fab fa-github"></i></a>
+            </div>
 
         </div> <!-- Container div end-->
     </section>
 
     <!-- Footer Section -->
-    <section class="footer">
-
+    <section class="footer" style="text-align: center; color: white;">
+        <span>Made by Armando Salcido</span>
     </section>
 
     <style>
