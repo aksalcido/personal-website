@@ -57,8 +57,6 @@ contactTab.addEventListener("click", () => {
     window.scrollTo(0, height);
 });
 
-
-
 emailIcon.addEventListener("click", () => {
     /* Get the text field */
     let tempInput = document.createElement('input');
