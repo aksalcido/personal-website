@@ -1,13 +1,24 @@
+/* Navbar */
 const navbar = document.getElementsByTagName("nav")[0];
 const navbarListItems = document.querySelectorAll(".navbar-item a")
 
-
+/* Contact Tab */
 const contactTab = document.getElementById("nav-contact");
+
+const projectContainers = document.querySelectorAll(".project-showcase");
+
+/* Images */
+const brushImg = document.getElementById("brush-img");
+const pacmanImg = document.getElementById("pacman-img");
+const sudokuImg = document.getElementById("sudoku-img");
+
+/* Email Icon */
 const emailIcon = document.getElementById("email-icon");
 
 window.onscroll = function() {
-    let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+        let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
 
+    /* Navbar */
     if (scrollTop === 0) {
         navbar.style.background = 'transparent'
 
@@ -22,7 +33,22 @@ window.onscroll = function() {
             navItem.style.color = 'black';
         });
     }
+
+    /* Unblur */
+    let i = 0;
+    
+    projectContainers.forEach(container => unblurTransition(container, scrollTop));
 };
+
+
+function unblurTransition(container, scrollTop) {
+    if (scrollTop + window.innerHeight >= container.offsetTop + (container.offsetHeight * 0.89)) {
+        container.classList.remove('blurred-demo');
+    } else {
+        container.classList.add('blurred-demo');
+    }
+}
+
 
 contactTab.addEventListener("click", () => {
     let body = document.body;
@@ -32,6 +58,8 @@ contactTab.addEventListener("click", () => {
     let height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
     window.scrollTo(0, height);
 });
+
+
 
 emailIcon.addEventListener("click", () => {
     /* Get the text field */
@@ -52,3 +80,5 @@ emailIcon.addEventListener("click", () => {
     /* Alert the copied text */
     alert("Copied Email");
 });
+
+
