@@ -35,8 +35,6 @@ window.onscroll = function() {
     }
 
     /* Unblur */
-    let i = 0;
-    
     projectContainers.forEach(container => unblurTransition(container, scrollTop));
 };
 

@@ -115,6 +115,8 @@ nav {
     height: 100%;
     background: #1A1A1D;
     overflow: auto;
+
+    padding: 20px 0 40px 0;
 }
 
 #about-section-header {

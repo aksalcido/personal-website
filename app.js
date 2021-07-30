@@ -22,3 +22,6 @@ app.get('/resume', (req, res) => {
 app.listen(3000, () => {
     console.log('Listening on PORT 3000');
 })
+
+// https://www.youtube.com/watch?v=JeUMb0OgUGg
+// https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
