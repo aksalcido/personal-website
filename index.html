@@ -13,30 +13,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../stylesheets/index.css">
+    <link rel="stylesheet" href="./stylesheets/index.css">
 
     <!-- font-awesome 5.15.2 CDN -->
     <script src="https://kit.fontawesome.com/5d8a1b574b.js" crossorigin="anonymous"></script>
 
-    <script src="../../scripts/index.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
 
-    <!-- 
-        const urlSearchParams = new URLSearchParams(window.location.search);
-        const params = Object.fromEntries(urlSearchParams.entries());
-
-        https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
-
-    -->
-    <script src="../../scripts/contact.js" defer></script>
-
+    <script src="./scripts/contact.js" defer></script>
 </head>
 <body>
     <!-- Navbar -->
     <nav>
         <ul id="navbar-list">
-            <li class="navbar-item"><a href="./index.html">Home</a></li>
-            <li class="navbar-item"><a href="./projects.html">Projects</a></li>
-            <li class="navbar-item"><a href="./resume.html">Resume</a></li>
+            <li class="navbar-item"><a href="index.html">Home</a></li>
+            <li class="navbar-item"><a href="./src/pages/projects.html">Projects</a></li>
+            <li class="navbar-item"><a href="./src/pages/resume.html">Resume</a></li>
             <li class="navbar-item" id="nav-contact"><a>Contact</a></li>
         </ul>
     </nav>
@@ -52,7 +44,7 @@
             </div>
 
             <div id="navigate-down-div" style="text-align: center;"> 
-                <img id="navigate-down-img" src="../../public/images/arrow-down-sign-to-navigate.png">
+                <img id="navigate-down-img" src="./public/images/arrow-down-sign-to-navigate.png">
             </div>
         </div> <!-- front-image div End-->
     </div>
@@ -61,7 +53,7 @@
     <section id="about-section">
         <div class="container">
             <h1 class="section-header" id="about-section-header">About</h1>
-            <img class="mgt-20" id="profile-picture" src="../../public/images/profile_picture2.png">
+            <img class="mgt-20" id="profile-picture" src="./public/images/profile_picture2.png">
             <h1 style="color: white; font-size: 36px;" >Hello!</h1>
             <p style="color: white; font-size: 24px; font-weight: 300;">
                 My name is Armando Salcido, a recent graduate from UC Irvine with a Bachelor of Science in Computer Science (2020).
@@ -91,7 +83,7 @@
             <!-- Brush Demo -->
             <div class="project-showcase blurred-demo" id="project-brush">
                 <div class="demo-container">
-                    <img class="" id="brush-img" src="../../public/gifs/homepage.gif">
+                    <img class="" id="brush-img" src="./public/gifs/homepage.gif">
                 </div>
 
                 <div class="project-info">
@@ -107,7 +99,7 @@
             <!-- Pacman Demo -->
             <div class="project-showcase blurred-demo mgt-20" id="project-pacman-container">
                 <div class="demo-container">
-                    <img class="blurred-img" id="pacman-img" src="../../public/gifs/gameplay.gif">
+                    <img class="blurred-img" id="pacman-img" src="./public/gifs/gameplay.gif">
                 </div>
                 
                 <div class="project-info">
@@ -123,7 +115,7 @@
             <!-- Sudoku Solver Demo -->
             <div class="project-showcase blurred-demo mgt-20" id="project-sudoku-container">
                 <div class="demo-container">
-                    <img class="blurred-img" id="sudoku-img" src="../../public/gifs/solve.gif">
+                    <img class="blurred-img" id="sudoku-img" src="./public/gifs/solve.gif">
                 </div>
 
                 <div class="project-info">
@@ -136,7 +128,7 @@
             </div>
 
             <div class="view-projects-container">
-                <a id="view-projects-btn" href="projects.html">View All Projects</a>
+                <a id="view-projects-btn" href="./src/pages/projects.html">View All Projects</a>
             </div>
              
         </div> <!-- Container div end-->
