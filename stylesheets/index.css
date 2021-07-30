@@ -62,7 +62,7 @@ nav {
 .front-image {
     height: calc(100vh);
     padding-top: 75px;
-    background-image: url("../../public/images/bg.jpg");
+    background-image: url("../public/images/bg.jpg");
     background-size: cover;
     background-position: center;
 }
