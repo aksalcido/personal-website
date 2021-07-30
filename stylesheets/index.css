@@ -91,6 +91,10 @@ nav {
     font-weight: 400;
 }
 
+#navigate-down-div {
+    text-align: center;
+}
+
 #navigate-down-img {
     position: absolute;
     bottom: 10px;
@@ -115,7 +119,6 @@ nav {
     height: 100%;
     background: #1A1A1D;
     overflow: auto;
-
     padding: 20px 0 40px 0;
 }
 
@@ -130,6 +133,23 @@ nav {
     margin-left: 20px;
     border-radius: 25px;
 }
+
+#about-me-greeting {
+    color: white; 
+    font-size: 36px;
+}
+
+#about-me-description {
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.about-me-outside-link {
+    text-decoration: none; 
+    color: yellowgreen;
+}
+
 
 /* ----- Project Section ----- */
 #project-section {
@@ -147,7 +167,9 @@ nav {
     justify-content: space-around;
     width: 100%;
     min-height: 450px;
+    padding: 15px 0 5px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
 .demo-container {
@@ -155,7 +177,6 @@ nav {
     width: 40%;
     text-align: center;
     background-color: #4e4e5009;
-    
 }
 
 .project-info {
@@ -192,7 +213,7 @@ nav {
 
 /* Bottom Container Containing Button */
 .view-projects-container {
-    padding: 10px 0;
+    padding: 30px 0;
     text-align: center;
 }
 
@@ -203,7 +224,6 @@ nav {
     text-decoration: none;
     padding: 15px 25px;
     border-radius: 10px;
-    
 }
 
 #view-projects-btn:hover {
@@ -220,8 +240,10 @@ nav {
 
 /* ----- Contact Section ----- */
 #contact-section {
-    height: 200px;
+    height: 100%;
+    padding: 20px 0;
     background: #4E4E50;
+    text-align: center;
 }
 
 #contact-section-header {
@@ -229,10 +251,17 @@ nav {
     border-bottom: 1px solid white;
 }
 
+#icon-container {
+    text-align: center;
+}
+
 /* Footer */
 .footer {
-    height: 25px; 
+    height: 25px;
+    padding: 15px 0;
     background: #4E4E50;
+    text-align: center; 
+    color: white;
 }
 
 .container a {
