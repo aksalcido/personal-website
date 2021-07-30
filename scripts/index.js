@@ -1,6 +1,6 @@
 /* Navbar */
 const navbar = document.getElementsByTagName("nav")[0];
-const navbarListItems = document.querySelectorAll(".navbar-item a")
+const navbarListItems = document.querySelectorAll("#navbar-list a")
 
 /* Contact Tab */
 const contactTab = document.getElementById("nav-contact");

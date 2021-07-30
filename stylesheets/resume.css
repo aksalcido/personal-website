@@ -45,7 +45,7 @@ nav {
     transform: translateY(4px);
 }
 
-.navbar-item a {
+#navbar-list a {
     color: white;
     text-decoration: none;
 }
