@@ -4,9 +4,12 @@ const projectContainers = Array.prototype.slice.call(document.getElementsByClass
 let activeProjectLI = document.querySelector(".active-project");
 let activeProjectContainer = document.querySelector(".active-project-container");
 
-
 projectListItems.forEach(proj => {
     proj.addEventListener('click', () => {
+        // Already active project
+        if (proj === activeProjectLI)
+            return;
+
         // Take Project Index
         let projectIndex = parseInt(proj.dataset.index);
 

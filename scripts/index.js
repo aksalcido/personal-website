@@ -2,6 +2,7 @@
 const navbar = document.getElementsByTagName("nav")[0];
 const navbarListItems = document.querySelectorAll("#navbar-list a")
 
+
 /* Contact Tab */
 const contactTab = document.getElementById("nav-contact");
 
@@ -16,7 +17,7 @@ const sudokuImg = document.getElementById("sudoku-img");
 const emailIcon = document.getElementById("email-icon");
 
 window.onscroll = function() {
-        let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+    let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
 
     /* Navbar */
     if (scrollTop === 0) {
@@ -35,17 +36,8 @@ window.onscroll = function() {
     }
 
     /* Unblur */
-    projectContainers.forEach(container => unblurTransition(container, scrollTop));
+    // projectContainers.forEach(container => unblurTransition(container, scrollTop));
 };
-
-
-function unblurTransition(container, scrollTop) {
-    if (scrollTop + window.innerHeight >= container.offsetTop + (container.offsetHeight * 0.89)) {
-        container.classList.remove('blurred-demo');
-    } else {
-        container.classList.add('blurred-demo');
-    }
-}
 
 
 contactTab.addEventListener("click", () => {
@@ -77,4 +69,12 @@ emailIcon.addEventListener("click", () => {
     alert("Copied Email");
 });
 
-
+    
+// Blur not utilized in project anymore
+function unblurTransition(container, scrollTop) {
+    if (scrollTop + window.innerHeight >= container.offsetTop + (container.offsetHeight * 0.89)) {
+        container.classList.remove('blurred-demo');
+    } else {
+        container.classList.add('blurred-demo');
+    }
+}
