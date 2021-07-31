@@ -50,11 +50,20 @@ contactTab.addEventListener("click", () => {
 
     // Compatability of calculating height of different browsers
     let height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
-    window.scrollTo(0, height);
+    
+    window.scrollTo({
+        top: height,
+        left: 0,
+        behavior: 'smooth'
+    });
 });
 
 navigateDownIcon.addEventListener("click", () => {
-    window.scrollTo(0, aboutMeSection.offsetHeight + aboutMeSection.scrollHeight - navbarPadding);
+    window.scrollTo({
+        top: aboutMeSection.offsetHeight + aboutMeSection.scrollHeight - navbarPadding,
+        left: 0,
+        behavior: 'smooth'
+    });
 });
 
 
@@ -77,13 +86,6 @@ emailIcon.addEventListener("click", () => {
     /* Alert the copied text */
     alert("Copied Email");
 });
-
-
-
-
-
-
-
 
 
 

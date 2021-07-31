@@ -1,0 +1,52 @@
+/* ----- Navbar ----- */
+nav {
+    position: fixed;
+    top: 0;   
+    left: 0;
+    height: 75px;
+    width: 100%;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 20;
+    transition: 0.4s;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.black-navbar {
+    background-color: black !important;
+}
+
+#navbar-list {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.navbar-item {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    width: 220px;
+    max-width: 220px;
+    height: 75px;
+    font-size: 24px;
+    padding: 16px 12px;
+    transition: 0.2s;
+}
+
+.navbar-item:hover {
+    background: rgb(251, 251, 251, 0.2);
+}
+
+.navbar-item:active {
+    transform: translateY(4px);
+}
+
+#navbar-list a {
+    color: white;
+    text-decoration: none;
+}
+
+#nav-contact {
+    float: right;
+}
