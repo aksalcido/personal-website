@@ -55,17 +55,18 @@
 
     <!-- About Me Section -->
     <section id="about-section">
-        <div class="container" style="width: 50%;">
+        <div class="container" style="width: 45%;">
             <div class="about-me-header-div" style="text-align: center;">
-                <h1 class="section-header" id="about-section-header">About me</h1>
+                <h1 class="section-header" id="about-section-header">About Me</h1>
             </div>
 
-            <div class="about-me-intro" style="display: flex; text-align: center;">
-                <!-- Profile Picture <img id="profile-picture" src="./public/images/profile_picture2.png">-->
-                <img id="profile-picture" src="./public/images/profile_picture.png">
-
+            <!-- Profile Picture and Description -->
+            <div id="about-me-intro">
+                <!-- Profile Picture -->
+                <div><img id="profile-picture" src="./public/images/profile_picture.png"></div>
+                
                 <!-- Intro Paragraph-->
-                <p id="about-me-description" style="text-align:left; margin: 0 !important;">
+                <p id="about-me-description">
                     My name is Armando Salcido, a recent graduate from UC Irvine with a Bachelor of Science in Computer Science (2020).
                     I am a highly motivated individual and self-starter as I demonstrate in my various side projects and achievements.
                     Since graduating I have continued to improve my coding skills by creating various <a class="about-me-outside-link" href="./src/pages/projects.html">projects</a> 
@@ -74,59 +75,55 @@
                 </p>
             </div>
 
+            <!-- Skills Section w/ Progress Bars-->
             <div id="about-me-skills">
+                <!-- Languages Skills-->
                 <div class="skills-container">
                     <p class="skill-header">LANGUAGES</p>
 
                     <ul class="skills-list">
                         <li><label for="python">Python</label> <br><progress value="90" max="100"> 90% </progress> <br></li>
-
                         <li><label for="cpp">C++</label> <br><progress value="83" max="100"> 83% </progress> <br></li>
-
                         <li><label for="java">Java</label> <br><progress value="73" max="100"> 73% </progress> <br></li>
-                        
                         <li><label for="js">JavaScript</label> <br><progress value="69" max="100"> 69% </progress> <br></li>
-
                         <li><label for="htmlcss">HTML/CSS</label> <br><progress value="69" max="100"> 69% </progress> <br></li>
-
                         <li><label for="sql">SQL</label> <br><progress value="63" max="100"> 63% </progress> <br></li>   
                     </ul>
                 </div>
 
+                <!-- Tools and Frameworks Skills -->
                 <div class="skills-container">
-                    <p class="skill-header">TOOLS AND FRAMEWORKS</p>
+                    <p class="skill-header">TOOLS/FRAMEWORKS</p>
 
                     <ul class="skills-list">
                         <li><label for="git">Git</label> <br><progress value="85" max="100"> 85% </progress> <br></li>
                         <li><label for="nodejs">Node.js</label> <br><progress value="80" max="100"> 80% </progress> <br></li>
-
                         <li><label for="nodejs">Express.js</label> <br><progress value="80" max="100"> 85% </progress> <br></li>
-                        
                         <li><label for="mongodb">MongoDB</label> <br><progress value="79" max="100"> 73% </progress> <br></li>
-
                         <li><label for="bootstrap">Bootstrap 4</label> <br><progress value="75" max="100"> 75% </progress> <br></li>
-
                         <li><label for="docker">Docker</label> <br><progress value="50" max="100"> 52% </progress> <br></li>
                     </ul>
                 </div>
             </div>
-
+            
+            <!-- About me Conclusion and Buttons -->
             <div id="about-me-conclusion">
                 <p id="about-me-looking-for">
-                    Currently looking for an entry level position in the following: Software Engineering, Full Stack Development, or any related Software related position
+                    Currently looking for an entry level position in the following: Software Engineering, Full Stack Development, or any Software related position
                 </p>
         
                 <div id="about-me-buttons">
                     <a class="primary-btn" id="view-resume-btn" href="./src/pages/resume.html">View Resume</a>
                 </div>
             </div>
+
         </div> <!-- Container div end-->
     </section>
 
     <!-- Projects Section -->
     <section id="project-section">
         <div class="container">
-            <h1 class="section-header" id="project-section-header">Brief Projects Teaser</h1>
+            <h1 class="section-header" id="project-section-header">Project Teasers</h1>
             
             <!-- Brush Demo -->
             <div class="project-showcase" id="project-brush">
@@ -140,7 +137,6 @@
                         A Full Stack web application where users can register and sign in to their accounts to create Artwork on a JavaScript Canvas.
                         Users interact with the community by liking/favorite/commenting on Artwork and following other users                        
                     </p>
-
                 </div>
             </div>
             
@@ -174,6 +170,7 @@
                 </div>
             </div>
 
+            <!-- View more projects button container -->
             <div class="view-projects-container">
                 <a class="primary-btn" id="view-projects-btn" href="./src/pages/projects.html">View All Projects</a>
             </div>
@@ -187,17 +184,12 @@
             <h1 class="section-header" id="contact-section-header">Contact and Socials</h1>
 
             <div id="icon-container">
-                <div>
-                    <a href="#" id="email-icon"><i class="contact-icon fas fa-envelope"></i></a>
-                </div>
-
-                <div>
-                    <a href="https://www.linkedin.com/in/armando-salcido-560b15176/"><i class="contact-icon fab fa-linkedin"></i></a>
-                </div>
-
-                <div>
-                    <a href="https://github.com/aksalcido"><i class="contact-icon fab fa-github"></i></a>
-                </div>
+                <!-- Email Icon -->
+                <div><a href="#" id="email-icon"><i class="contact-icon fas fa-envelope"></i></a></div>
+                <!-- LinkedIn Icon-->
+                <div><a href="https://www.linkedin.com/in/armando-salcido-560b15176/"><i class="contact-icon fab fa-linkedin"></i></a></div>
+                <!-- GitHub Icon -->
+                <div><a href="https://github.com/aksalcido"><i class="contact-icon fab fa-github"></i></a></div>
             </div>
 
         </div> <!-- Container div end-->
@@ -207,9 +199,5 @@
     <section class="footer">
         <span>Made by Armando Salcido</span>
     </section>
-
-    <style>
-
-    </style>
 </body>
 </html>

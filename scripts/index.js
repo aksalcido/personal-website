@@ -60,7 +60,7 @@ contactTab.addEventListener("click", () => {
 
 navigateDownIcon.addEventListener("click", () => {
     window.scrollTo({
-        top: aboutMeSection.offsetHeight + aboutMeSection.scrollHeight - navbarPadding,
+        top: aboutMeSection.offsetTop - navbarPadding,
         left: 0,
         behavior: 'smooth'
     });

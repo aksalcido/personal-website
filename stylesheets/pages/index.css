@@ -76,7 +76,7 @@ body {
 }
 
 .section-header {
-    font-size:40px; 
+    font-size: 54px; 
     padding: 10px 0px;
     margin: 0; 
     margin-bottom: 20px;
@@ -91,24 +91,29 @@ body {
 }
 
 #about-section-header {
-    color: white; 
+    color: white;
+}
+
+#about-me-intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 #profile-picture {
-    height: 150px;
-    border-radius: 25px;
-    margin: 0 25px 0 0;
-}
-
-#about-me-greeting {
-    color: white; 
-    font-size: 36px;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: 2px solid #F2F2F2;
 }
 
 #about-me-description {
     color: white;
     font-size: 24px;
     font-weight: 300;
+    text-align:left;
+    margin: 0 !important;
 }
 
 .about-me-outside-link {
@@ -116,18 +121,39 @@ body {
     color: #2a9df4;
 }
 
+/* About me Skills */
 #about-me-skills {
-    text-align: center;
     width: 100%;
-    margin-left: 153px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
+/* Skill-Container Resizing */
 .skills-container {
     text-align: left;
-    display: inline-block;
     color: white; 
     font-family: 'Open Sans', sans-serif;
-    width: 40%;
+    width: 20%;
+}
+
+@media (max-width: 2209px) and (min-width: 1580px) {
+    .skills-container {
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 1579px) and (min-width: 826px) {
+    .skills-container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 825px) {
+    .skills-container {
+        width: 100%;
+    }
 }
 
 .skill-header {
@@ -146,24 +172,7 @@ body {
     margin-bottom: 15px;
 }
 
-
-#about-me-conclusion {
-    text-align:left; 
-    margin-left: 153px;
-}
-
-#about-me-looking-for {
-    color: white;
-    font-size: 24px;
-    font-weight: 300;
-}
-
-#about-me-buttons {
-    text-align: center;
-}
-
-
-/* Default */
+/* Skills Progress Bar */
 progress {
     background-color: white;
     border: 0;
@@ -194,6 +203,28 @@ progress::-moz-progress-bar {
     border-radius: 9px;
 }
 
+
+/* About me Conclusion */
+#about-me-conclusion {
+    text-align:left; 
+}
+
+#about-me-looking-for {
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#about-me-buttons {
+    text-align: center;
+}
+
+#view-resume-btn {
+    color: white;
+    background: #0A76C7;
+}
+
+
 /* ----- Project Section ----- */
 #project-section {
     height: 100%;
@@ -201,7 +232,7 @@ progress::-moz-progress-bar {
 }
 
 #project-section-header {
-    text-align: right; 
+    text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
 }
 
