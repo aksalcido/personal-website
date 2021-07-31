@@ -2,10 +2,15 @@
 const navbar = document.getElementsByTagName("nav")[0];
 const navbarListItems = document.querySelectorAll("#navbar-list a")
 
-
 /* Contact Tab */
 const contactTab = document.getElementById("nav-contact");
 
+/* Welcome Page Navigate Down Arrow */
+const navigateDownIcon = document.getElementById("navigate-down-icon")
+
+const aboutMeSection = document.getElementById("about-section");
+
+/* Project Showcase */
 const projectContainers = document.querySelectorAll(".project-showcase");
 
 /* Images */
@@ -15,6 +20,9 @@ const sudokuImg = document.getElementById("sudoku-img");
 
 /* Email Icon */
 const emailIcon = document.getElementById("email-icon");
+
+const navbarPadding = 75;
+
 
 window.onscroll = function() {
     let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
@@ -34,11 +42,7 @@ window.onscroll = function() {
             navItem.style.color = 'black';
         });
     }
-
-    /* Unblur */
-    // projectContainers.forEach(container => unblurTransition(container, scrollTop));
 };
-
 
 contactTab.addEventListener("click", () => {
     let body = document.body;
@@ -48,6 +52,11 @@ contactTab.addEventListener("click", () => {
     let height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
     window.scrollTo(0, height);
 });
+
+navigateDownIcon.addEventListener("click", () => {
+    window.scrollTo(0, aboutMeSection.offsetHeight + aboutMeSection.scrollHeight - navbarPadding);
+});
+
 
 emailIcon.addEventListener("click", () => {
     /* Get the text field */
@@ -69,7 +78,15 @@ emailIcon.addEventListener("click", () => {
     alert("Copied Email");
 });
 
-    
+
+
+
+
+
+
+
+
+
 // Blur not utilized in project anymore
 function unblurTransition(container, scrollTop) {
     if (scrollTop + window.innerHeight >= container.offsetTop + (container.offsetHeight * 0.89)) {
