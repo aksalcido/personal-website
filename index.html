@@ -13,11 +13,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./stylesheets/index.css">
-
+    <!-- Linking Index Stylesheet -->
+    <link rel="stylesheet" href="./stylesheets/pages/index.css">
+    
+    <!-- Linking Component Stylesheets -->
+    <link rel="stylesheet" href="./stylesheets/components/navbar.css">
+    <link rel="stylesheet" href="./stylesheets/components/buttons.css">
+    
     <!-- font-awesome 5.15.2 CDN -->
     <script src="https://kit.fontawesome.com/5d8a1b574b.js" crossorigin="anonymous"></script>
 
+    <!-- Linking Index JavaScript -->
     <script src="./scripts/index.js" defer></script>
 </head>
 <body>
@@ -59,58 +65,61 @@
                 <img id="profile-picture" src="./public/images/profile_picture.png">
 
                 <!-- Intro Paragraph-->
-                <p id="about-me-description" style="text-align:left;">
+                <p id="about-me-description" style="text-align:left; margin: 0 !important;">
                     My name is Armando Salcido, a recent graduate from UC Irvine with a Bachelor of Science in Computer Science (2020).
                     I am a highly motivated individual and self-starter as I demonstrate in my various side projects and achievements.
                     Since graduating I have continued to improve my coding skills by creating various <a class="about-me-outside-link" href="./src/pages/projects.html">projects</a> 
                     available on my <a class="about-me-outside-link" href="https://github.com/aksalcido">GitHub portfolio</a>, contributing to an Open-source project called 
-                    <a class="about-me-outside-link" href="https://github.com/PlasmaPy">PlasmaPy</a>, as well as learning different tools/frameworks.
+                    <a class="about-me-outside-link" href="https://github.com/PlasmaPy">PlasmaPy</a>, as well as learning different tools/frameworks. Here are some of my technical skills:
                 </p>
             </div>
 
-            <div style="display: flex; justify-content: space-evenly;">
-                <div style="color: white; font-family: 'Open Sans', sans-serif; font-weight: 700;">
-                    <p style="font-size: 24px;">LANGUAGES</p>
+            <div id="about-me-skills">
+                <div class="skills-container">
+                    <p class="skill-header">LANGUAGES</p>
 
-                    <label for="file">PYTHON</label> <br>
-                    <progress value="90" max="100"> 90% </progress> <br>
-                    
-                    <label for="file">C++</label> <br>
-                    <progress value="83" max="100"> 83% </progress> <br>
-                    
-                    <label for="file">JAVA</label> <br>
-                    <progress value="73" max="100"> 73% </progress> <br>
+                    <ul class="skills-list">
+                        <li><label for="python">Python</label> <br><progress value="90" max="100"> 90% </progress> <br></li>
 
-                    <label for="file">JAVASCRIPT</label> <br>
-                    <progress value="69" max="100"> 69% </progress> <br>
+                        <li><label for="cpp">C++</label> <br><progress value="83" max="100"> 83% </progress> <br></li>
 
-                    <label for="file">HTML/CSS</label> <br>
-                    <progress value="69" max="100"> 69% </progress> <br>
+                        <li><label for="java">Java</label> <br><progress value="73" max="100"> 73% </progress> <br></li>
+                        
+                        <li><label for="js">JavaScript</label> <br><progress value="69" max="100"> 69% </progress> <br></li>
 
-                    <label for="file">SQL</label> <br>
-                    <progress value="63" max="100"> 63% </progress> <br>
+                        <li><label for="htmlcss">HTML/CSS</label> <br><progress value="69" max="100"> 69% </progress> <br></li>
+
+                        <li><label for="sql">SQL</label> <br><progress value="63" max="100"> 63% </progress> <br></li>   
+                    </ul>
                 </div>
 
-                <div style="color: white; font-family: 'Open Sans', sans-serif; font-weight: 700;">
-                    <p style="font-size: 24px;">TOOLS AND FRAMEWORKS</p>
+                <div class="skills-container">
+                    <p class="skill-header">TOOLS AND FRAMEWORKS</p>
 
-                    <label for="file">Git</label> <br>
-                    <progress value="85" max="100"> 85% </progress> <br>
-                    
-                    <label for="file">Node.js</label> <br>
-                    <progress value="80" max="100"> 80% </progress> <br>
-            
-                    <label for="file">MongoDB</label> <br>
-                    <progress value="79" max="100"> 79% </progress> <br>
-                    
-                    <label for="file">Bootstrap 4</label> <br>
-                    <progress value="75" max="100"> 75% </progress> <br>
+                    <ul class="skills-list">
+                        <li><label for="git">Git</label> <br><progress value="85" max="100"> 85% </progress> <br></li>
+                        <li><label for="nodejs">Node.js</label> <br><progress value="80" max="100"> 80% </progress> <br></li>
 
-                    <label for="file">Docker</label> <br>
-                    <progress value="50" max="100"> 52% </progress> <br>
-                </div>  
+                        <li><label for="nodejs">Express.js</label> <br><progress value="80" max="100"> 85% </progress> <br></li>
+                        
+                        <li><label for="mongodb">MongoDB</label> <br><progress value="79" max="100"> 73% </progress> <br></li>
 
+                        <li><label for="bootstrap">Bootstrap 4</label> <br><progress value="75" max="100"> 75% </progress> <br></li>
 
+                        <li><label for="docker">Docker</label> <br><progress value="50" max="100"> 52% </progress> <br></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="about-me-conclusion">
+                <p id="about-me-looking-for">
+                    Currently looking for an entry level position in the following: Software Engineering, Full Stack Development, or any related Software related position
+                </p>
+        
+                <div id="about-me-buttons">
+                    <a class="primary-btn" id="view-resume-btn" href="./src/pages/resume.html">View Resume</a>
+                </div>
+            </div>
         </div> <!-- Container div end-->
     </section>
 
@@ -122,7 +131,7 @@
             <!-- Brush Demo -->
             <div class="project-showcase" id="project-brush">
                 <div class="demo-container">
-                    <img class="" id="brush-img" src="./public/gifs/homepage.gif">
+                    <img class="project-img" id="brush-img" src="./public/gifs/homepage.gif">
                 </div>
 
                 <div class="project-info">
@@ -138,7 +147,7 @@
             <!-- Pacman Demo -->
             <div class="project-showcase mgt-20" id="project-pacman-container">
                 <div class="demo-container">
-                    <img class="blurred-img" id="pacman-img" src="./public/gifs/gameplay.gif">
+                    <img class="project-img" id="pacman-img" src="./public/gifs/gameplay.gif">
                 </div>
                 
                 <div class="project-info">
@@ -147,14 +156,13 @@
                     <p class="project-description">
                         A Python implementation of the famous Arcade game Pacman
                     </p>
-
                 </div>
             </div>
 
             <!-- Sudoku Solver Demo -->
             <div class="project-showcase mgt-20" id="project-sudoku-container">
                 <div class="demo-container">
-                    <img class="blurred-img" id="sudoku-img" src="./public/gifs/solve.gif">
+                    <img class="project-img" id="sudoku-img" src="./public/gifs/solve.gif">
                 </div>
 
                 <div class="project-info">
@@ -167,7 +175,7 @@
             </div>
 
             <div class="view-projects-container">
-                <a id="view-projects-btn" href="./src/pages/projects.html">View All Projects</a>
+                <a class="primary-btn" id="view-projects-btn" href="./src/pages/projects.html">View All Projects</a>
             </div>
              
         </div> <!-- Container div end-->

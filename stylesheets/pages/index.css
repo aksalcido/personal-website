@@ -9,60 +9,11 @@ body {
     margin-top: 20px;
 }
 
-/* ----- Navbar ----- */
-nav {
-    position: fixed;
-    top: 0px;   
-    left: 0px;
-    height: 75px;
-    width: 100%;
-    background-color: transparent;
-    overflow: hidden;
-    z-index: 20;
-    transition: 0.4s;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-}
-
-#navbar-list {
-    width: 60%;
-    margin: 0 auto;
-}
-
-.navbar-item {
-    float: left;
-    text-align: center;
-    list-style-type: none;
-    width: 220px;
-    max-width: 220px;
-    height: 75px;
-    font-size: 24px;
-    padding: 16px 12px;
-    transition: 0.2s;
-}
-
-.navbar-item:hover {
-    background: rgb(251, 251, 251, 0.2);
-}
-
-.navbar-item:active {
-    transform: translateY(4px);
-}
-
-#navbar-list a {
-    color: white;
-    text-decoration: none;
-}
-
-#nav-contact {
-    float: right;
-}
-
 /* ----- Front Image ----- */
 .front-image {
     height: calc(100vh);
     padding-top: 75px;
-    background-image: url("../public/images/bg.jpg");
+    background-image: url("../../public/images/bg.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -93,6 +44,7 @@ nav {
     font-weight: 400;
 }
 
+/* ----- Navigate Down Button ----- */
 #navigate-down-div {
     text-align: center;
 }
@@ -124,9 +76,9 @@ nav {
 }
 
 .section-header {
-    margin: 0; 
     font-size:40px; 
-    padding: 10px 0px; 
+    padding: 10px 0px;
+    margin: 0; 
     margin-bottom: 20px;
 }
 
@@ -145,7 +97,7 @@ nav {
 #profile-picture {
     height: 150px;
     border-radius: 25px;
-    margin-right: 25px;
+    margin: 0 25px 0 0;
 }
 
 #about-me-greeting {
@@ -161,9 +113,86 @@ nav {
 
 .about-me-outside-link {
     text-decoration: none; 
-    color: yellowgreen;
+    color: #2a9df4;
 }
 
+#about-me-skills {
+    text-align: center;
+    width: 100%;
+    margin-left: 153px;
+}
+
+.skills-container {
+    text-align: left;
+    display: inline-block;
+    color: white; 
+    font-family: 'Open Sans', sans-serif;
+    width: 40%;
+}
+
+.skill-header {
+    font-size: 24px; 
+    font-weight: 700;
+}
+
+.skills-list {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.skills-list li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+
+#about-me-conclusion {
+    text-align:left; 
+    margin-left: 153px;
+}
+
+#about-me-looking-for {
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#about-me-buttons {
+    text-align: center;
+}
+
+
+/* Default */
+progress {
+    background-color: white;
+    border: 0;
+    height: 11px;
+    border-radius: 9px;
+}
+
+/* Progress Bar for Chrome/Safari we need to add those Webkit pseudo-classes */
+progress::-webkit-progress-bar {
+    background-color: white;
+    border: 0;
+    height: 11px;
+    border-radius: 9px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #2a9df4;
+    border: 0;
+    height: 11px;
+    border-radius: 9px;
+}
+
+/* Progress Bar for Firefox also has its special pseudo-class that is ::-moz-progress-bar. Unlike Chrome and Safari, this pseudo-class in Firefox refers to the progress meter/value */
+progress::-moz-progress-bar {
+    background-color: #2a9df4;
+    border: 0;
+    height: 11px;
+    border-radius: 9px;
+}
 
 /* ----- Project Section ----- */
 #project-section {
@@ -183,7 +212,6 @@ nav {
     min-height: 450px;
     padding: 15px 0 5px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
 }
 
 .demo-container {
@@ -207,22 +235,12 @@ nav {
     font-weight: 300;
 }
 
-/* Project Image Related Styling */
+.project-img {
+    height: 100%;
+}
+
 #brush-img {
-    height: 100%;
     width: 100%;
-}
-
-#pacman-img {
-    height: 100%;
-}
-
-#sudoku-img {
-    height: 100%;
-}
-
-.blurred-demo {
-    filter: blur(8px);
 }
 
 /* Bottom Container Containing Button */
@@ -230,27 +248,6 @@ nav {
     padding: 30px 0;
     text-align: center;
 }
-
-#view-projects-btn {
-    display: inline-block;  
-    background-color: #42B5C8;
-    color: #F2F2F2;
-    text-decoration: none;
-    padding: 15px 25px;
-    border-radius: 10px;
-}
-
-#view-projects-btn:hover {
-    color: white;
-    background-color: #348B99;
-}
-
-#view-projects-btn:active {
-    transform: translateY(4px);
-    box-shadow: 1px;
-    box-shadow: 0 4px 2px -2px gray;
-}
-
 
 /* ----- Contact Section ----- */
 #contact-section {
