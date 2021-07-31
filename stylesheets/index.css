@@ -84,6 +84,8 @@ nav {
 #front-name {
     font-size: 70px;
     font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
 }
 
 #front-description {
@@ -95,9 +97,23 @@ nav {
     text-align: center;
 }
 
-#navigate-down-img {
+#navigate-down-icon {
     position: absolute;
     bottom: 10px;
+    color: white;
+    font-size: 48px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.1s ease;
+}
+
+#navigate-down-icon:hover {
+    background: rgb(251, 251, 251, 0.2);
+}
+
+#navigate-down-icon:active {
+    transform: translateY(4px);
+    background: rgb(251, 251, 251, 0.6);
 }
 
 /* ===== Sections ===== */
@@ -117,21 +133,19 @@ nav {
 /* ----- About Section ----- */
 #about-section {
     height: 100%;
-    background: #1A1A1D;
+    background: #0F0F0F;
     overflow: auto;
     padding: 20px 0 40px 0;
 }
 
 #about-section-header {
     color: white; 
-    border-bottom: 1px solid white; 
 }
 
 #profile-picture {
-    height: 450px;
-    float: right;
-    margin-left: 20px;
+    height: 150px;
     border-radius: 25px;
+    margin-right: 25px;
 }
 
 #about-me-greeting {
@@ -242,38 +256,40 @@ nav {
 #contact-section {
     height: 100%;
     padding: 20px 0;
-    background: #4E4E50;
+    background: #1A1A1D;
     text-align: center;
 }
 
 #contact-section-header {
-    color: white; 
-    border-bottom: 1px solid white;
+    color: white;
 }
 
 #icon-container {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.contact-icon {
+    font-size: 64px;
+    color: rgb(129, 129, 129);
+    margin: 0 35px;
+    transition: 0.2s ease;
+}
+
+.contact-icon:hover {
+    color: #F2F2F2;
 }
 
 /* Footer */
 .footer {
     height: 25px;
     padding: 15px 0;
-    background: #4E4E50;
+    background: #1A1A1D;
     text-align: center; 
     color: white;
-}
-
-.container a {
-    text-decoration: none   ;
-}
-
-.contact-icon {
-    font-size: 64px;
-    color: rgb(29, 29, 29);
-    transition: 0.2s ease;
-}
-
-.contact-icon:hover {
-    color: #F2F2F2;
 }

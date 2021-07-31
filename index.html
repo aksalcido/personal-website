@@ -6,7 +6,7 @@
     <!-- Google Font: Open Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Google Font: Source Sans Pro-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,8 +19,6 @@
     <script src="https://kit.fontawesome.com/5d8a1b574b.js" crossorigin="anonymous"></script>
 
     <script src="./scripts/index.js" defer></script>
-
-    <script src="./scripts/contact.js" defer></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -44,34 +42,75 @@
             </div>
 
             <div id="navigate-down-div"> 
-                <img id="navigate-down-img" src="./public/images/arrow-down-sign-to-navigate.png">
+                <i id="navigate-down-icon" class="fas fa-arrow-down"></i>
             </div>
         </div> <!-- front-image div End-->
     </div>
 
     <!-- About Me Section -->
     <section id="about-section">
-        <div class="container">
-            <h1 class="section-header" id="about-section-header">About</h1>
-            <img class="mgt-20" id="profile-picture" src="./public/images/profile_picture2.png">
-            <h1 id="about-me-greeting">Hello!</h1>
-            <p id="about-me-description">
-                My name is Armando Salcido, a recent graduate from UC Irvine with a Bachelor of Science in Computer Science (2020).
-                I am a highly motivated individual and self-starter as I demonstrate in my various side projects and achievements. 
-                <br><br>
-                I have knowledge in Object Oriented Programming languages such as Python, C++, and Java. As well as JavaScript, HTML, CSS, and SQL.
-                <br><br>
-                Since graduating I have continued to improve my coding skills by creating various <a class="about-me-outside-link" href="./src/pages/projects.html">projects</a> 
-                available on my <a class="about-me-outside-link" href="https://github.com/aksalcido">GitHub portfolio</a>, contributing to an Open-source project called 
-                <a class="about-me-outside-link" href="https://github.com/PlasmaPy">PlasmaPy</a>, as well as learning different tools/frameworks such as Node.js, Express.js,
-                MongoDB, Docker, and more. 
-                <br><br>
+        <div class="container" style="width: 50%;">
+            <div class="about-me-header-div" style="text-align: center;">
+                <h1 class="section-header" id="about-section-header">About me</h1>
+            </div>
 
-                I love programming, problem solving, and complex thinking and am eager to continue learning a variety of different technologies, tools, and frameworks. 
+            <div class="about-me-intro" style="display: flex; text-align: center;">
+                <!-- Profile Picture <img id="profile-picture" src="./public/images/profile_picture2.png">-->
+                <img id="profile-picture" src="./public/images/profile_picture.png">
 
-                <br><br>
-                Below you will find a subset of some of the projects that I have created, checkout the Projects section to view them in detail, thank you for stopping by!
-            </p>
+                <!-- Intro Paragraph-->
+                <p id="about-me-description" style="text-align:left;">
+                    My name is Armando Salcido, a recent graduate from UC Irvine with a Bachelor of Science in Computer Science (2020).
+                    I am a highly motivated individual and self-starter as I demonstrate in my various side projects and achievements.
+                    Since graduating I have continued to improve my coding skills by creating various <a class="about-me-outside-link" href="./src/pages/projects.html">projects</a> 
+                    available on my <a class="about-me-outside-link" href="https://github.com/aksalcido">GitHub portfolio</a>, contributing to an Open-source project called 
+                    <a class="about-me-outside-link" href="https://github.com/PlasmaPy">PlasmaPy</a>, as well as learning different tools/frameworks.
+                </p>
+            </div>
+
+            <div style="display: flex; justify-content: space-evenly;">
+                <div style="color: white; font-family: 'Open Sans', sans-serif; font-weight: 700;">
+                    <p style="font-size: 24px;">LANGUAGES</p>
+
+                    <label for="file">PYTHON</label> <br>
+                    <progress value="90" max="100"> 90% </progress> <br>
+                    
+                    <label for="file">C++</label> <br>
+                    <progress value="83" max="100"> 83% </progress> <br>
+                    
+                    <label for="file">JAVA</label> <br>
+                    <progress value="73" max="100"> 73% </progress> <br>
+
+                    <label for="file">JAVASCRIPT</label> <br>
+                    <progress value="69" max="100"> 69% </progress> <br>
+
+                    <label for="file">HTML/CSS</label> <br>
+                    <progress value="69" max="100"> 69% </progress> <br>
+
+                    <label for="file">SQL</label> <br>
+                    <progress value="63" max="100"> 63% </progress> <br>
+                </div>
+
+                <div style="color: white; font-family: 'Open Sans', sans-serif; font-weight: 700;">
+                    <p style="font-size: 24px;">TOOLS AND FRAMEWORKS</p>
+
+                    <label for="file">Git</label> <br>
+                    <progress value="85" max="100"> 85% </progress> <br>
+                    
+                    <label for="file">Node.js</label> <br>
+                    <progress value="80" max="100"> 80% </progress> <br>
+            
+                    <label for="file">MongoDB</label> <br>
+                    <progress value="79" max="100"> 79% </progress> <br>
+                    
+                    <label for="file">Bootstrap 4</label> <br>
+                    <progress value="75" max="100"> 75% </progress> <br>
+
+                    <label for="file">Docker</label> <br>
+                    <progress value="50" max="100"> 52% </progress> <br>
+                </div>  
+
+
         </div> <!-- Container div end-->
     </section>
 
@@ -137,12 +176,20 @@
     <!-- Contact Section -->
     <section id="contact-section">
         <div class="container">
-            <h1 class="section-header" id="contact-section-header">Contact Me</h1>
+            <h1 class="section-header" id="contact-section-header">Contact and Socials</h1>
 
             <div id="icon-container">
-                <a href="#" id="email-icon"><i class="contact-icon fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/armando-salcido-560b15176/"><i class="contact-icon fab fa-linkedin"></i></a>
-                <a href="https://github.com/aksalcido"><i class="contact-icon fab fa-github"></i></a>
+                <div>
+                    <a href="#" id="email-icon"><i class="contact-icon fas fa-envelope"></i></a>
+                </div>
+
+                <div>
+                    <a href="https://www.linkedin.com/in/armando-salcido-560b15176/"><i class="contact-icon fab fa-linkedin"></i></a>
+                </div>
+
+                <div>
+                    <a href="https://github.com/aksalcido"><i class="contact-icon fab fa-github"></i></a>
+                </div>
             </div>
 
         </div> <!-- Container div end-->
