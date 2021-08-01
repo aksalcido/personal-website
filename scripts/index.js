@@ -5,10 +5,12 @@ const navbarListItems = document.querySelectorAll("#navbar-list a")
 /* Contact Tab */
 const contactTab = document.getElementById("nav-contact");
 
-/* Welcome Page Navigate Down Arrow */
-const navigateDownIcon = document.getElementById("navigate-down-icon")
+/* Navigate Buttons */
+const welcomeNavigate = document.getElementById("welcome-navigate");
+const aboutNavigate = document.getElementById("about-navigate");
 
 const aboutMeSection = document.getElementById("about-section");
+const projectSection = document.getElementById("project-section");
 
 /* Project Showcase */
 const projectContainers = document.querySelectorAll(".project-showcase");
@@ -58,13 +60,22 @@ contactTab.addEventListener("click", () => {
     });
 });
 
-navigateDownIcon.addEventListener("click", () => {
+welcomeNavigate.addEventListener("click", () => {
     window.scrollTo({
         top: aboutMeSection.offsetTop - navbarPadding,
         left: 0,
         behavior: 'smooth'
     });
 });
+
+aboutNavigate.addEventListener("click", () => {
+    window.scrollTo({
+        top: projectSection.offsetTop - navbarPadding,
+        left: 0,
+        behavior: 'smooth'
+    })
+})
+
 
 
 emailIcon.addEventListener("click", () => {
