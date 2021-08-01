@@ -45,11 +45,11 @@ body {
 }
 
 /* ----- Navigate Down Button ----- */
-#navigate-down-div {
+.navigate-down-div {
     text-align: center;
 }
 
-#navigate-down-icon {
+#welcome-navigate {
     position: absolute;
     bottom: 10px;
     color: white;
@@ -59,14 +59,15 @@ body {
     transition: 0.1s ease;
 }
 
-#navigate-down-icon:hover {
+#welcome-navigate:hover {
     background: rgb(251, 251, 251, 0.2);
 }
 
-#navigate-down-icon:active {
+#welcome-navigate:active {
     transform: translateY(4px);
     background: rgb(251, 251, 251, 0.6);
 }
+
 
 /* ===== Sections ===== */
 .container {
@@ -84,10 +85,11 @@ body {
 
 /* ----- About Section ----- */
 #about-section {
-    height: 100%;
+    position: relative;
+    min-height: calc(100vh - 75px);
     background: #0F0F0F;
-    overflow: auto;
     padding: 20px 0 40px 0;
+    box-sizing: content-box;
 }
 
 #about-section-header {
@@ -203,7 +205,6 @@ progress::-moz-progress-bar {
     border-radius: 9px;
 }
 
-
 /* About me Conclusion */
 #about-me-conclusion {
     text-align:left; 
@@ -222,6 +223,29 @@ progress::-moz-progress-bar {
 #view-resume-btn {
     color: white;
     background: #0A76C7;
+}
+
+/* ----- Navigate Down Button ----- */
+#about-navigate-down-div {
+    width: 100%; 
+    margin-top: 75px;
+}
+
+#about-navigate {
+    color: white;
+    font-size: 48px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.1s ease;
+}
+
+#about-navigate:hover {
+    background: rgb(251, 251, 251, 0.2);
+}
+
+#about-navigate:active {
+    transform: translateY(4px);
+    background: rgb(251, 251, 251, 0.6);
 }
 
 
