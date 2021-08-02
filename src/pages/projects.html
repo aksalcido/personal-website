@@ -13,12 +13,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
 
+    <!-- font-awesome 5.15.2 CDN -->
+    <script src="https://kit.fontawesome.com/5d8a1b574b.js" crossorigin="anonymous"></script>
+
     <!-- Linking Projects Stylesheet -->
     <link rel="stylesheet" href="../../stylesheets/pages/projects.css">
 
     <!-- Linking Components Stylesheets -->
     <link rel="stylesheet" href="../../stylesheets/components/navbar.css">
     
+    <!-- Linking Buttons Stylesheet Component -->
+    <link rel="stylesheet" href="../../stylesheets/components/buttons.css">
+
     <!-- Linking Projects JavaScript-->
     <script src="../../scripts/projects.js" defer></script>
 </head>
@@ -51,9 +57,8 @@
             </div>
 
             <!-- All Projects -->
-            <div id="projects" style="width: 80%; margin: 0 auto; text-align: center; margin-top: 20px;">
-
-                <!-- Brush -->
+            <div id="projects">
+                <!-- ========== Brush ========== -->
                 <div class="project-container active-project-container">
                     <!-- Project Title -->
                     <h1 class="project-title">Brush</h1>
@@ -66,8 +71,9 @@
                     <div class="info-container">
                         <!-- Project Technology Used -->
                         <p class="project-technology">
-                            Node.js, HTML, CSS, Bootstrap 4, MongoDB, MongoDB Atlas, Heroku
+                            Node.js, HTML, CSS, Bootstrap 4, MongoDB, MongoDB Atlas, Heroku 
                         </p>
+
 
                         <!-- Project Description -->
                         <p class="description">
@@ -75,7 +81,8 @@
                         </p>
 
                         <!-- Project Outside Links-->
-                        <button>Github Link</button>
+                        <a class="primary-btn" href="https://brush-paint-app.herokuapp.com/">View Deployment</a>
+                        <a class="primary-btn github-btn" href="https://github.com/aksalcido/Brush"><i class="contact-icon fab fa-github"></i> GitHub</a>
                     </div>
 
                     <div class="project-demo">
@@ -90,7 +97,7 @@
                             <!-- Info Container -->
                             <div class="info-container">
                                 <p class="description">
-                                    Homepage contains random popular artwork that users can navigate view and navigate to. They can even get their own artwork to this page!
+                                    Homepage contains random popular artwork that users can view and navigate to. They can even get their own artwork to this page if popular enough!
                                 </p>
                             </div>
                         </div>
@@ -106,7 +113,8 @@
                             <!-- Info Container -->
                             <div class="info-container">
                                 <p class="description">
-                                    Homepage contains random popular artwork that users can navigate view and navigate to. They can even get their own artwork to this page!
+                                    Users have their own profile page where they can describe themselves and information about them. They can also view their artwork, followers, following, and
+                                    favorited artwork through the profile. User profiles can be commented on by any user as well.
                                 </p>
                             </div>
                         </div>
@@ -122,7 +130,8 @@
                             <!-- Info Container -->
                             <div class="info-container">
                                 <p class="description">
-                                    Homepage contains random popular artwork that users can navigate view and navigate to. They can even get their own artwork to this page!
+                                    Draw your artwork and then publish it. After publishing, you are directed
+                                    to the artwork profile and can edit the information about it there.
                                 </p>
                             </div>
                         </div>
@@ -138,14 +147,14 @@
                             <!-- Info Container -->
                             <div class="info-container">
                                 <p class="description">
-                                    Homepage contains random popular artwork that users can navigate view and navigate to. They can even get their own artwork to this page!
+                                    Discover the most favorited/liked artwork on the application in the discover section!
                                 </p>
                             </div>
                         </div>
                     </div> <!-- Project Demo Div End -->
                 </div>
 
-                <!-- Chess/AI -->
+                <!-- ========== Chess/AI ========== -->
                 <div class="project-container">
                     <!-- Project Title -->
                     <h1 class="project-title">Chess/AI</h1>
@@ -158,45 +167,60 @@
                     <div class="info-container">
                         <!-- Project Technology Used -->
                         <p class="project-technology">
-                            Project Technology
+                            C++
                         </p>
 
                         <!-- Project Description -->
                         <p class="description">
-                            Project Description
+                            A console version of the board game Chess against an enemy AI that plays at Easy or Medium difficulty!
+                            Easy difficulty is just random valid moves while medium utilizes the Minimax decision rule for best move to make depending on the board.
                         </p>
 
                         <!-- Project Outside Links-->
-                        <button>Github Link</button>
+                        <a class="primary-btn github-btn" href="https://github.com/aksalcido/Chess-Game-AI"><i class="contact-icon fab fa-github"></i> GitHub</a>
                     </div>
 
                     <div class="project-demo">
                         <!-- Feature 1 -->
                         <div class="feature">
                             <!-- Header -->
-                            <h1>Feature Header</h1>
+                            <h1>Smarter AI and Minimax</h1>
                             
                             <!-- Image Demo/Gif -->
-                            <div><img style="width: 100%;" src="../../public/gifs/brush/homepage.gif"></div>
+                            <div><img class="demo-img" src="../../public/images/chess-ai/Move Instructions.png"></div>
                             
                             <!-- Info Container -->
                             <div class="info-container">
                                 <p class="description">
-                                    Feature Description
+                                    AI uses the minimax decision rule to compute the best move to make depending on the board. AI also uses alpha-beta pruning to remove nodes that will have
+                                    no effect on the final evaluation. A simplified representation of the algorithm is seen below:
+                                </p>
+
+                                <p><a href="https://commons.wikimedia.org/wiki/File:AB_pruning.svg#/media/File:AB_pruning.svg">
+                                    <img class="demo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/AB_pruning.svg/1200px-AB_pruning.svg.png" alt="AB pruning.svg">
+                                </a><br>By <a href="https://en.wikipedia.org/wiki/User:Jez9999" class="extiw" title="en:User:Jez9999">Jez9999</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=3708424">Link</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div class="feature">
+                            <!-- Header -->
+                            <h1>Chess Checkmate</h1>
+                            
+                            <!-- Image Demo/Gif -->
+                            <div><img class="demo-img" src="../../public/images/chess-ai/Checkmate.png"></div>
+                            
+                            <!-- Info Container -->
+                            <div class="info-container">
+                                <p class="description">
+                                    A classic Chess checkmate to determine a winner
                                 </p>
                             </div>
-
-                            <a title="Nuno Nogueira (Nmnogueira), CC BY-SA 2.5 &lt;https://creativecommons.org/licenses/by-sa/2.5&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Minimax.svg">
-                                <img width="512" alt="Minimax" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Minimax.svg/512px-Minimax.svg.png">
-                            </a>
                         </div>
                     </div> <!-- Project Demo Div End -->
+                </div> <!-- Chess/AI Div End -->
 
-
-
-                </div> <!-- Brush Div End -->
-
-                <!-- Pacman -->
+                <!-- ========== Pacman ========== -->
                 <div class="project-container">
                     <!-- Project Title -->
                     <h1 class="project-title">Pacman</h1>
@@ -209,42 +233,66 @@
                     <div class="info-container">
                         <!-- Project Technology Used -->
                         <p class="project-technology">
-                            Project Technology
+                            Python, tkinter, Pillow
                         </p>
 
                         <!-- Project Description -->
                         <p class="description">
-                            Project Description
+                            A Python implementation of the famous Arcade game Pacman using Python's graphical library tkinter for GUI and image processing library Pillow for image importing.
                         </p>
 
                         <!-- Project Outside Links-->
-                        <button>Github Link</button>
+                        <a class="primary-btn github-btn" href="https://github.com/aksalcido/Pacman"><i class="contact-icon fab fa-github"></i> GitHub</a>
                     </div>
 
                     <div class="project-demo">
                         <!-- Feature 1 -->
                         <div class="feature">
                             <!-- Header -->
-                            <h1>Feature Header</h1>
+                            <h1>Gameplay and AI</h1>
                             
                             <!-- Image Demo/Gif -->
-                            <div><img style="width: 100%;" src="../../public/gifs/"></div>
+                            <div><img class="demo-img" src="../../public/gifs/pacman/gameplay.gif"></div>
                             
                             <!-- Info Container -->
                             <div class="info-container">
                                 <p class="description">
-                                    Feature Description
+                                    <img src="../../public/images/pacman/blinky.png"> Blinky attempts to chase Pacman from directly behind. <br>
+                                    <img src="../../public/images/pacman/pinky.png"> Pinky attempts to ambush Pacman from the front, depending on the position can lead to Pinky chasing from behind. <br>
+                                    <img src="../../public/images/pacman/clyde.png"> Clyde has completely random movement on the board. <br>
+                                    <img src="../../public/images/pacman/inky.png"> Inky can have an equal chance of any of the previous Ghost's movement for any duration amount of time. <br>
+                                </p>
+
+                                <p class="description">
+                                    The AI Blinky, Pinky, and sometimes Inky use the Breadth-First-Search algorithm to find the best path to ambush Pacman. A representation of the BFS order of each
+                                    location spot being checked is provided below:
+                                </p>
+
+                                <a title="Alexander Drichel, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Breadth-first-tree.svg">
+                                    <img width="256" alt="Breadth-first-tree" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Breadth-first-tree.svg/256px-Breadth-first-tree.svg.png">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div class="feature">
+                            <!-- Header -->
+                            <h1>Gameover</h1>
+                            
+                            <!-- Image Demo/Gif -->
+                            <div><img class="demo-img" src="../../public/gifs/pacman/gameover.gif"></div>
+                            
+                            <!-- Info Container -->
+                            <div class="info-container">
+                                <p class="description">
+                                    Gameover is reached when Pacman gets caught by the AI and loses all lives.
                                 </p>
                             </div>
-
-                            <a title="Alexander Drichel, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Breadth-first-tree.svg">
-                                <img width="256" alt="Breadth-first-tree" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Breadth-first-tree.svg/256px-Breadth-first-tree.svg.png">
-                            </a>
                         </div>
                     </div> <!-- Project Demo Div End -->
                 </div> <!-- Pacman Div End -->
 
-                <!-- Text File Analyzer -->
+                <!-- ========== Text File Analyzer ========== -->
                 <div class="project-container">
                     <!-- Project Title -->
                     <h1 class="project-title">Text File Analyzer</h1>
@@ -258,38 +306,56 @@
                     <div class="info-container">
                         <!-- Project Technology Used -->
                         <p class="project-technology">
-                            Project Technology
+                            Java
                         </p>
 
                         <!-- Project Description -->
                         <p class="description">
-                            Project Description
+                            Multithreaded application that analyzes text files and outputs statistics such as unique words, misspelled word count, most frequent words, etc.
                         </p>
 
                         <!-- Project Outside Links-->
-                        <button>Github Link</button>
+                        <a class="primary-btn github-btn" href="https://github.com/aksalcido/Text-File-Analyzer"><i class="contact-icon fab fa-github"></i> GitHub</a>
                     </div>
 
                     <div class="project-demo">
                         <!-- Feature 1 -->
                         <div class="feature">
                             <!-- Header -->
-                            <h1>Feature Header</h1>
+                            <h1>Program Execution</h1>
                             
                             <!-- Image Demo/Gif -->
-                            <div><img style="width: 100%;" src="../../public/"></div>
+                            <div><img class="demo-img" src="../../public/images/text-analyzer/program.png"></div>
                             
                             <!-- Info Container -->
                             <div class="info-container">
                                 <p class="description">
-                                    Feature Description
+                                    Interface and execution of program is shown. When a user wishes to analyzes a text file, the user is prompted
+                                    a text file that has to be located in an input folder in the directory as well as how many threads to run.
+                                    The threads are created and then an output log is created in /output
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div class="feature">
+                            <!-- Header -->
+                            <h1>Output Log</h1>
+                            
+                            <!-- Image Demo/Gif -->
+                            <div><img class="demo-img" src="../../public/images/text-analyzer/output.png"></div>
+                            
+                            <!-- Info Container -->
+                            <div class="info-container">
+                                <p class="description">
+                                    An output text file is created to write the statistics of each analysis, here is an example. Checkout the README for more details on what each statistic represents.
                                 </p>
                             </div>
                         </div>
                     </div> <!-- Project Demo Div End -->
                 </div> <!-- Text File Analyzer Div End -->
 
-                <!-- Sudoku Solver -->
+                <!-- ========== Sudoku Solver ========== -->
                 <div class="project-container">
                     <!-- Project Title -->
                     <h1 class="project-title">Sudoku Solver</h1>
@@ -298,47 +364,62 @@
                         <img class="header-image" src="../../public/images/sudoku-solver/solved.png">
                     </div>
 
-
                     <!-- Project Information -->
                     <div class="info-container">
                         <!-- Project Technology Used -->
                         <p class="project-technology">
-                            Project Technology
+                            Python, tkinter
                         </p>
 
                         <!-- Project Description -->
                         <p class="description">
-                            Project Description
+                            A Classic Sudoku Solver implemented in Python and the graphical library tkinter for the GUI. Takes input from user and also contains two example boards to be solved!
                         </p>
 
                         <!-- Project Outside Links-->
-                        <button>Github Link</button>
+                        <a class="primary-btn github-btn" href="https://github.com/aksalcido/Sudoku-Solver"><i class="contact-icon fab fa-github"></i> GitHub</a>
                     </div>
 
                     <div class="project-demo">
                         <!-- Feature 1 -->
                         <div class="feature">
                             <!-- Header -->
-                            <h1>Feature Header</h1>
+                            <h1>Solving</h1>
                             
                             <!-- Image Demo/Gif -->
-                            <div><img style="width: 100%;" src="../../public/gifs/"></div>
+                            <div><img class="demo-img"  src="../../public/gifs/sudoku solver/solve.gif"></div>
                             
                             <!-- Info Container -->
                             <div class="info-container">
                                 <p class="description">
-                                    Feature Description
+                                    The solver utilizes the Backtracking algorithm to solve the board. The runtime is O(9 ^ m) where 9 is the number of possibilities for each square and m is the number of spaces that are blank.
+                                    A representation of the algorithm can be seen below:
+                                </p>
+                                <a title="Simpsons contributor, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Sudoku_solved_by_bactracking.gif">
+                                    <img class="demo-img" alt="Sudoku solved by bactracking" src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Sudoku_solved_by_bactracking.gif">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div class="feature">
+                            <!-- Header -->
+                            <h1>Board Input</h1>
+                            
+                            <!-- Image Demo/Gif -->
+                            <div><img class="demo-img" src="../../public/gifs/sudoku solver/input.gif"></div>
+                            
+                            <!-- Info Container -->
+                            <div class="info-container">
+                                <p class="description">
+                                    Creates a GUI window in tkinter for users to input a valid Sudoku board to solve
                                 </p>
                             </div>
-
-                            <a title="Simpsons contributor, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Sudoku_solved_by_bactracking.gif">
-                                <img width="256" alt="Sudoku solved by bactracking" src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Sudoku_solved_by_bactracking.gif">
-                            </a>
                         </div>
                     </div> <!-- Project Demo Div End -->
                 </div> <!-- Sudoku Solver Project Div End -->
 
-                <!-- Blackjack -->
+                <!-- ========== Blackjack ========== -->
                 <div class="project-container">
                     <!-- Project Title -->
                     <h1 class="project-title">Blackjack</h1>
@@ -351,38 +432,55 @@
                     <div class="info-container">
                         <!-- Project Technology Used -->
                         <p class="project-technology">
-                            Project Technology
+                            C++
                         </p>
 
                         <!-- Project Description -->
                         <p class="description">
-                            Project Description
+                            A classic game of Blackjack done in C++ with a color coated console interface!
                         </p>
 
                         <!-- Project Outside Links-->
-                        <button>Github Link</button>
+                        <a class="primary-btn github-btn" href="https://github.com/aksalcido/Blackjack"><i class="contact-icon fab fa-github"></i> GitHub</a>
                     </div>
 
                     <div class="project-demo">
                         <!-- Feature 1 -->
                         <div class="feature">
                             <!-- Header -->
-                            <h1>Feature Header</h1>
+                            <h1>Round</h1>
                             
                             <!-- Image Demo/Gif -->
-                            <div><img style="width: 100%;" src="../../public/gifs/"></div>
+                            <div><img class="demo-img" src="../../public/images/blackjack/gameplay.png"></div>
                             
                             <!-- Info Container -->
                             <div class="info-container">
                                 <p class="description">
-                                    Feature Description
+                                    A representation of a single round in the application, where random cards are drawn and displayed to the console.
+                                    After a user stands, the dealer will draw until they have a higher hand than the user or until bust.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div class="feature">
+                            <!-- Header -->
+                            <h1>Bankrupt</h1>
+                            
+                            <!-- Image Demo/Gif -->
+                            <div><img class="demo-img" src="../../public/images/blackjack/bankrupt.png"></div>
+                            
+                            <!-- Info Container -->
+                            <div class="info-container">
+                                <p class="description">
+                                    The game continues until the User wishes to quit or goes bankrupt. Which means going all in (displayed in console) and losing the bet.
                                 </p>
                             </div>
                         </div>
                     </div> <!-- Project Demo Div End -->
                 </div> <!-- Blackjack Div End -->
 
-                <!-- YouTube-dl Wrapper -->
+                <!-- ========== YouTube-dl Wrapper ========== -->
                 <div class="project-container">
                     <!-- Project Title -->
                     <h1 class="project-title">YouTube-dl Wrapper</h1>
@@ -395,41 +493,58 @@
                     <div class="info-container">
                         <!-- Project Technology Used -->
                         <p class="project-technology">
-                            Project Technology
+                            Python, Flask, HTML, CSS, youtube-dl
                         </p>
 
                         <!-- Project Description -->
                         <p class="description">
-                            Project Description
+                            Utilizes Flask to deploy a local webpage as a youtube-dl wrapper where users can input valid YouTube links and convert to mp3 files
                         </p>
 
                         <!-- Project Outside Links-->
-                        <button>Github Link</button>
+                        <a class="primary-btn github-btn" href="https://github.com/aksalcido/YouTube-Video-Converter"><i class="contact-icon fab fa-github"></i> GitHub</a>
                     </div>
 
                     <div class="project-demo">
                         <!-- Feature 1 -->
                         <div class="feature">
                             <!-- Header -->
-                            <h1>Feature Header</h1>
+                            <h1>User Input</h1>
                             
                             <!-- Image Demo/Gif -->
-                            <div><img style="width: 100%;" src="../../public/gifs/"></div>
+                            <div><img class="demo-img" src="../../public/gifs/youtube-dl wrapper/download_demo.gif"></div>
                             
                             <!-- Info Container -->
                             <div class="info-container">
                                 <p class="description">
-                                    Feature Description
+                                    Each link input is sent as a get request and is processed by youtube-dl. Simple interface to wrap the youtube-dl command line
                                 </p>
                             </div>
                         </div>
+
+                        <!-- Feature 2 -->
+                        <div class="feature">
+                            <!-- Header -->
+                            <h1>Link Validity</h1>
+                            
+                            <!-- Image Demo/Gif -->
+                            <div><img class="demo-img" src="../../public/gifs/youtube-dl wrapper/invalid_demo.gif"></div>
+                            
+                            <!-- Info Container -->
+                            <div class="info-container">
+                                <p class="description">
+                                    Links are validated on the backend and the state of the request is displayed as successful or unsuccessful in the history
+                                </p>
+                            </div>
+                        </div>
+
                     </div> <!-- Project Demo Div End -->
                 </div> <!-- YouTube-dl Wrapper Div End -->
                 
-                <!-- Discord Bot -->
+                <!-- ========== Discord Bot ========== -->
                 <div class="project-container">
                     <!-- Project Title -->
-                    <h1 class="project-title">Discord Bot</h1>
+                    <h1 class="project-title">Discord Bot (In Development)</h1>
                     <!-- Header Image -->
                     <div class="img-container">
                         <img class="header-image" src="../../public/images/discord-bot/c-dustin-91AQt9p4Mo8-unsplash.jpg">
@@ -440,38 +555,21 @@
                     <div class="info-container">
                         <!-- Project Technology Used -->
                         <p class="project-technology">
-                            Project Technology
+                            Node.js, Discord API
                         </p>
 
                         <!-- Project Description -->
                         <p class="description">
-                            Project Description
+                            A Discord Bot that provides random features and information to a Discord server
                         </p>
-
-                        <!-- Project Outside Links-->
-                        <button>Github Link</button>
                     </div>
 
                     <div class="project-demo">
-                        <!-- Feature 1 -->
-                        <div class="feature">
-                            <!-- Header -->
-                            <h1>Feature Header</h1>
-                            
-                            <!-- Image Demo/Gif -->
-                            <div><img style="width: 100%;" src="../../public/"></div>
-                            
-                            <!-- Info Container -->
-                            <div class="info-container">
-                                <p class="description">
-                                    Feature Description
-                                </p>
-                            </div>
-                        </div>
+
                     </div> <!-- Project Demo Div End -->
                 </div> <!-- Discord Project Div End -->
-
             </div> <!-- Projects div end-->
+
         </div> <!-- Container div end-->
     </div>
 
