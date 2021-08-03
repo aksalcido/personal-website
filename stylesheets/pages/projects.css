@@ -41,7 +41,12 @@ body {
     text-align: center;
     color: rgb(88, 88, 88);
     border-bottom: 5px solid #D2FDFF;
-    transition: 0.4s ease all;
+    transition: 0.2s ease all;
+}
+
+.project-li:hover {
+    color: rgb(194, 194, 194);
+    cursor: pointer;
 }
 
 /* Project Being Viewed */
@@ -94,6 +99,31 @@ body {
     height: 100%;
 }
 
+/* The Brush Image is not responsive on resizing without these media queries */
+@media (max-width: 780px) {
+    #brush-img-container {
+        height: 30%;
+    }
+}
+
+@media (min-width: 781px) and (max-width: 950px) {
+    #brush-img-container {
+        height: 45%;
+    }
+}
+
+@media (min-width: 951px) and (max-width: 1350px) {
+    #brush-img-container {
+        height: 60%;
+    }
+}
+
+@media (min-width: 1351px) and (max-width: 2016px) {
+    #brush-img-container {
+        height: 80%;
+    }
+}
+
 .project-technology {
     font-style:italic;
     font-size: 20px;
@@ -113,11 +143,15 @@ body {
 }
 
 .project-demo {
-    width: 70%;
+    width: 80%;
     height: 100%;
     margin: 0 auto;
 }
 
 .demo-img {
     max-width: 85%;
+}
+
+.enlarge-img {
+    width: 50%;
 }

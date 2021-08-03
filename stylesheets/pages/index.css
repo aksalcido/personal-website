@@ -32,6 +32,12 @@ body {
     color: white;
 }
 
+@media (max-width: 1140px) {
+    #welcome-armando {
+        margin-left: 12px;
+    }
+}
+
 #front-name {
     font-size: 70px;
     font-weight: 400;
