@@ -50,3 +50,22 @@ nav {
 #nav-contact {
     float: right;
 }
+
+@media (max-width: 710px) {
+    .navbar-item {
+        width: 70px;
+    }
+}
+
+@media (min-width: 711px) and (max-width: 1111px) {
+    .navbar-item {
+        width: 80px;
+    }
+}
+
+@media (min-width: 1111px) and (max-width: 1644px) {
+    .navbar-item {
+        width: 140px;
+    }
+}
+
