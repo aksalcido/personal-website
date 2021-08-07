@@ -58,6 +58,7 @@ body {
 
 .active-project-bg {
     color: black;
+    font-size: 17px;
     font-weight: 700;
     border-radius: 50px;
 }
