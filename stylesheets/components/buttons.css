@@ -1,3 +1,4 @@
+/* Primary Button */
 .primary-btn {
     display: inline-block;  
     background-color: #42B5C8;
@@ -18,6 +19,7 @@
     box-shadow: 0 4px 2px -2px rgb(199, 199, 199);
 }
 
+/* GitHub Button */
 .github-btn {
     background: rgb(226, 226, 226);
     color: black;
@@ -28,3 +30,31 @@
     color: white;
     background-color: rgb(88, 88, 88);
 }
+
+/* Back to Top Button */
+.top-btn {
+    transform: translate(-50%, 0);
+    color: white;
+    background: rgb(129, 129, 129);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.1s ease;
+}
+
+.top-btn-fixed {
+    position: fixed;
+    right: 0;
+    top: 50%;
+}
+
+.top-btn:hover {
+    color: black;
+    background-color: #F2F2F2;
+}
+
+.top-btn:active {
+    box-shadow: 1px;
+    box-shadow: 0 4px 2px -2px rgb(0, 0, 0);
+}
+

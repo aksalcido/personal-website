@@ -22,8 +22,10 @@ const sudokuImg = document.getElementById("sudoku-img");
 
 /* Email Icon */
 const emailIcon = document.getElementById("email-icon");
-
 const navbarPadding = 75;
+
+/* Top Button */
+const topBtn = document.querySelector(".top-btn");
 
 
 window.onscroll = function() {
@@ -76,8 +78,6 @@ aboutNavigate.addEventListener("click", () => {
     })
 })
 
-
-
 emailIcon.addEventListener("click", () => {
     /* Get the text field */
     let tempInput = document.createElement('input');
@@ -98,13 +98,10 @@ emailIcon.addEventListener("click", () => {
     alert("Copied Email");
 });
 
-
-
-// Blur not utilized in project anymore
-function unblurTransition(container, scrollTop) {
-    if (scrollTop + window.innerHeight >= container.offsetTop + (container.offsetHeight * 0.89)) {
-        container.classList.remove('blurred-demo');
-    } else {
-        container.classList.add('blurred-demo');
-    }
-}
+topBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    })
+});

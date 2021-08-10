@@ -374,9 +374,13 @@ progress::-moz-progress-bar {
 
 /* Footer */
 .footer {
-    height: 25px;
-    padding: 15px 0;
+    height: 100%;
+    padding-bottom: 10px;
     background: #1A1A1D;
     text-align: center; 
     color: white;
+}
+
+.credits {
+    margin-bottom: 15px;
 }

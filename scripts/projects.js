@@ -6,6 +6,9 @@ let activeProjectLI = document.querySelector(".active-project");
 let activeProjectContainer = document.querySelector(".active-project-container");
 let activeProjectBG = document.querySelector(".active-project-bg");
 
+/* Top Button */
+const topBtn = document.querySelector(".top-btn");
+
 projectListItems.forEach(proj => {
     proj.addEventListener('click', () => {
         // Already active project
@@ -38,3 +41,11 @@ projectListItems.forEach(proj => {
     }); 
 });
 
+/* Scroll back to top of page */
+topBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    })
+});
